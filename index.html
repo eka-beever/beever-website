@@ -13,13 +13,16 @@
     <link href="assets/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="assets/lib/fullpage/fullpage.min.css" rel="stylesheet">
+    <link href="assets/lib/timeline/timeline.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-<title>Beever System Indonesia</title>
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/lib/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/lib/owlcarousel/owl.theme.default.min.css">
+
 </head>
 <body>
     <body onload="myFunction()" style="margin:0;">
         <div id="loader">
-         
             <div class="logo-preloader"></div>
             <div class="container-radar">
                 <div class="masking-radar">
@@ -116,21 +119,25 @@
                  </div>
             </div>
         </div>
-        <div class="container-page animate-bottom" style="display:none;" id="myDiv">
+
+        <div class="container-page" style="display:none;" id="myDiv">
                 
             <header>
-                <!-- Fixed navbar -->
                 <nav class="navbar navbar-inverse-white navbar-expand-md fixed-top">
-                <div class="container">
-                    <a class="logo-beever" href="#homePage"><div class="logo-staysafe"><img src="./assets/img/img_logo_beever_landscape.svg"></div></a>
+                <div class="container position-relative">
+                    <a class="logo-beever" href="#homePage">
+                            <img src="./assets/img/img_logo_beever_landscape.svg">
+                    </a>
 
                     <button type="button" class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <div class="ico-menu"></div>
+                        <div class="ico-menu">
+                            <img src="./assets/img/img_menu.png">
+                        </div>
                     </button>
                     <div class="navbar-beever">
-                        <div class="float-start nav-left">
-                            <div class="collapse navbar-collapse " id="navbarCollapse">
-                                <ul class="nav navbar-nav" id="menu">
+                        <div class="nav-left">
+                            <div class="collapse navbar-collapse position-relative"  id="navbarCollapse">
+                                <ul class="nav navbar-nav float-start" id="menu">
                                     <li data-menuanchor="homePage" class="active" >
                                         <a href="#homePage" id="id">Beranda</a>
                                         <a href="#homePage" id="en">Home</a>
@@ -139,28 +146,28 @@
                                         <a href="#businessPage" id="id">Bisnis</a>
                                         <a href="#businessPage" id="en">Business</a>
                                     </li>
-                                    <li data-menuanchor="teamPage" >
-                                        <a href="#teamPage" id="id">Tim</a>
-                                        <a href="#teamPage" id="en">Team</a>
-                                    </li>
                                     <li data-menuanchor="newsPage" >
                                         <a href="#newsPage" id="id">Berita</a>
                                         <a href="#newsPage" id="en">News</a>
                                     </li>
+                                    <li data-menuanchor="teamPage" >
+                                        <a href="#teamPage" id="id">Tim</a>
+                                        <a href="#teamPage" id="en">Team</a>
+                                    </li>
                                     <li data-menuanchor="downloadsPage">
                                         <a href="#downloadsPage" id="id">Unduh</a>
-                                        <a href="#downlodsPage" id="en">Downloads</a>
+                                        <a href="#downloadsPage" id="en">Downloads</a>
                                     </li>
                                     <li data-menuanchor="contactPage">
                                         <a href="#contactPage" id="id">Kontak</a>
                                         <a href="#contactPage" id="en">Contact</a>
                                     </li>
                                 </ul>
+                                <div class="button-menu">
+                                    <a href="#contactPage" class="btn btn-orange" id="id"> Gratis Demo</a>
+                                    <a href="#contactPage" class="btn btn-orange" id="en">Get Free Demo</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="float-end">
-                        <a href="#contactPage" class="btn btn-orange" id="id"> Gratis Demo</a>
-                        <a href="#contactPage" class="btn btn-orange" id="en">Get Free Demo</a>
                         </div>
                     </div>
                 </div>
@@ -176,31 +183,34 @@
                 <div class="section " id="section0" >
                     <div class="container position-relative">
                         <div class="row">
-                            <div class="col">
-                                <div class="landing-page">
-                                    <h1 id="id">My payday I can decide <br>
-                                        by <span> My Selft</span> 
-                                        <br>
-                                    </h1>
-                                    <h1 id="en">My payday I can decide <br>
-                                        by <span class="h1-italic"> My Self</span> 
-                                        <br>
-                                    </h1>
-                                    <p id="id">
-                                        Improve your financial activities with beever. <br>The new innovative financial solutions allow you <br>to decide your own payday in the fastest and <br> most convenient way possible.
-                                    </p>
-                                    <p id="en">
-                                        
-                                        Improve your financial activities with beever. <br>The new innovative financial solutions allow you <br>to decide your own payday in the fastest and <br>most convenient way possible.
-                                    </p>
-                                    <a href="#"><img src="assets/img/img_appstore.png"></a>
-                                    <a href="#"><img src="assets/img/img_googleplay.png"></a>
-                                </div>
-                            </div>
-                            <div class="col">
+                            <div class="col-lg-6 col-sm-12 col-xs-12 ">
                                 <div class="bg-landing">
                                     <img src="assets/img/img_showcase.png">
                                     </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-xs-12 order-md-first">
+                                <div class="landing-page">
+                                    <div class="landing-wrap">
+                                        <h1 id="id">My payday I can decide <br>
+                                            by <span> My Selft</span> 
+                                            <br>
+                                        </h1>
+                                        <h1 id="en">My payday I can decide <br>
+                                            by <span class="h1-italic"> My Self</span> 
+                                            <br>
+                                        </h1>
+                                        <p id="id">
+                                            Improve your financial activities with beever. <br>The new innovative financial solutions allow you <br>to decide your own payday in the fastest and <br> most convenient way possible.
+                                        </p>
+                                        <p id="en">
+                                            
+                                            Improve your financial activities with beever. <br>The new innovative financial solutions allow you <br>to decide your own payday in the fastest and <br>most convenient way possible.
+                                        </p>
+                                        <a href="#"><img src="assets/img/img_appstore.png"></a>
+                                        <a href="#"><img src="assets/img/img_googleplay.png"></a>
+                                    </div>
+                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -248,11 +258,11 @@
                     <p>Our Roadmap To Reach Your Easy Financial Solutions</p>
                     <div class="container">
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-lg-8">
                                 <br>
                                 <br>
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-sm-4 col-xs-4">
                                         <div class="wrap-number">
                                             <div id="counter" class="wrapper-counter">
                                                 <span class="count">
@@ -262,7 +272,7 @@
                                           </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-sm-4 col-xs-4">
                                         <div class="wrap-number">
                                             <div id="counter" class="wrapper-counter">
                                                 <span class="count">
@@ -272,7 +282,7 @@
                                           </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-sm-4 col-xs-4">
                                         <div class="wrap-number">
                                             <div id="counter" class="wrapper-counter">
                                                 <span class="count">
@@ -285,7 +295,7 @@
                                 </div>
                                 <br>
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-sm-4 col-xs-4">
                                         <div class="wrap-number">
                                             <div id="counter" class="wrapper-counter">
                                                 <span class="count">
@@ -295,7 +305,7 @@
                                           </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-sm-4 col-xs-4">
                                         <div class="wrap-number">
                                             <div id="counter" class="wrapper-counter">
                                                 <span class="count">
@@ -305,7 +315,7 @@
                                           </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4  col-sm-4 col-xs-4">
                                         <div class="wrap-number">
                                             <div id="counter" class="wrapper-counter">
                                                 <span class="count">
@@ -317,7 +327,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <img src="./assets/img/img_section2.png">
                             </div>
                         </div>
@@ -334,33 +344,33 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-lg-2 col-xs-2">
                                 <div class="partner">
                                     <a href="#"></a>
                                     <img src="./assets/img/img_logo_pjww.png">
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-lg-2 col-xs-2">
                                 <div class="partner">
                                     <img src="./assets/img/img_logo_otto.png">
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-lg-2 col-xs-2">
                                 <div class="partner">
                                     <img src="./assets/img/img_logo_job2go.png">
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-lg-2 col-xs-2">
                                 <div class="partner">
                                     <img src="./assets/img/img_logo_tokopandai.png">
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-lg-2 col-xs-2">
                                 <div class="partner">
                                     <img src="./assets/img/img_logo_linkaja.png">
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-lg-2 col-xs-2">
                                 <div class="partner">
                                     <img src="./assets/img/img_logo_sequis.png">
                                 </div>
@@ -369,44 +379,339 @@
                     </div>
                    
                 </div>
-                <div class="section" id="section4">
+                <div class="section bg-bottom" id="section4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h1>Latest News</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <section id="news-carousel">
+                        <div class="container position-relative">
+                            <div class="shadow-left"></div>
+                            <div class="owl-carousel carousel-news owl-theme padding-lr10">
+                                <div class="item">
+                                    <div class="news-wrap">
+                                        <div class="news-img">
+                                            <img src="./assets/dummy/img-news-2dec2021.jpg">
+                                        </div>
+                                        <a href="#">
+                                        <h1>Signing Investment Agreement with Mr Ilham Akbar Habibie</h1>
+                                        <h4>December 2, 2021</h4>
+                                        <div class="point"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="news-wrap">
+                                        <div class="news-img">
+                                            <img src="./assets/dummy/img-news-24sep2021.jpg">
+                                        </div>
+                                        <h1>Signing Acquisition Agreement with P2P</h1>
+                                        <h4>September 24, 2021</h4>
+                                        <div class="point"></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="news-wrap">
+                                        <div class="news-img">
+                                            <img src="./assets/dummy/img-news-28jul2021.jpg">
+                                        </div>
+                                        <h1>Signing and start operation with Koperasi Group companies</h1>
+                                        <h4>July 28, 2021</h4>
+                                        <div class="point"></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="news-wrap">
+                                        <div class="news-img">
+                                            <img src="./assets/dummy/img-news-14jan2021.jpg">
+                                        </div>
+                                        <h1>Signing 3 Party Agreement in Indonesia</h1>
+                                        <h4>January 14, 2021</h4>
+                                        <div class="point"></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="news-wrap">
+                                        <div class="news-img">
+                                            <img src="./assets/dummy/img-news-2dec2021.jpg">
+                                        </div>
+                                        <h1>Signing Investment Agreement with Mr Ilham Akbar Habibie</h1>
+                                        <h4>December 2, 2021</h4>
+                                        <div class="point"></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="news-wrap">
+                                        <div class="news-img">
+                                            <img src="./assets/dummy/img-news-2dec2021.jpg">
+                                        </div>
+                                        <h1>Signing Investment Agreement with Mr Ilham Akbar Habibie</h1>
+                                        <h4>December 2, 2021</h4>
+                                        <div class="point"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="shadow-right"></div>
+                        </div>
+                        <div class="line-dotted"></div>
+                    </section>
+                </div>
+                <div class="section bg-bottom" id="section5">
                     <div class="container">
                         <div class="row">
                             <div class="col">
                                 <h1>Team</h1>
-                                <p>All with local partners, including successful conglomerates, legal firm, investment banks and VC/PE investment firm,<br> who understand global capital markets in order to leverage strong relationships with local businesses, governments</p>
+                                <p>Our team assembles a unique set of profiles combining Japanese and ASEAN very senior experience in Fintech, IT & data science, asset management, investment bank, PE, companies, strong ability to understand ASEAN cultures and deep local network for sourcing pipelines and developing business. For examples, we have members from Japan, Indonesia, Mongolia and other countries having global experience / education background.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid  no-padding container-team">
+                        <div class="owl-carousel carousel-team owl-theme">
+                            <div class="item team-wrap" >
+                                <div class="line-solid-team"></div>
+                                <div class="team-photo float-start">
+                                    <img src="./assets/img/img_sugamoto.png">
+                                </div>
+                                <div class="team-desc-wrap float-end">
+                                    <div class="team-desc">
+                                        <h1>Hitoshi Sugamoto</h1>
+                                        <p>
+                                            Most recently he was one of the most successful private bankers at Goldman Sachs in Tokyo and previously a managing director at Wealth Management team at Deutsche Bank Group where he created strong relationship with more than 200 HNWIs in Japan. Until 2004 he successively held position of a branch manager at 4 major retail offices at Nikko securities after 7 year experience of retail sales at Nikko group. During this period as a head of business strategy planning team he led successful M&A transactions took place between Nikko vs. CITI in 1999, and Nikko vs. SMBC in 2009.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item team-wrap" >
+                                <div class="line-solid-team"></div>
+                                <div class="team-photo float-start">
+                                    <img src="./assets/img/img_kurosawa.png">
+                                </div>
+                                <div class="team-desc-wrap float-end">
+                                    <div class="team-desc">
+                                        <h1>Takeshi Kurosawa</h1>
+                                        <p>
+                                            28 years investment experience in investment banking and asset management. Since 2007, Takeshi has been primarily involved in private equity investments in Mongolia and Bangladesh. In 2007, he helped set up the first offshore investment bank Frontier LLC in Mongolia. In 2014, he launched an impact investment fund for Bangladesh PEs at Osiris Group in Hong Kong. Previously, he was head of IR at hedge funds in Tokyo (2003 - 2008) and a strategist on the equity program trading team at Salomon Brothers Asia, Citigroup and NRI (1990 - 2003). BS in Physics, Keio University; MS in Applied Physics, Tokyo Institute of Technology.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item team-wrap" >
+                                <div class="line-solid-team"></div>
+                                <div class="team-photo float-start">
+                                    <img src="./assets/img/img_yuji.png">
+                                </div>
+                                <div class="team-desc-wrap float-end">
+                                    <div class="team-desc">
+                                        <h1>Yuji Iwasaki</h1>
+                                        <p>
+                                            More than 30 years of experience in the investment banking and corporate finance industries in Tokyo and Zurich, primarily with Yamaichi Securities. He has led fund-raising activities for more than 300 Japanese and Asian enterprises over the course of his career. After Yamaichi he served as CFO of three listed companies in Japan. In 2008, he was invited to Mongolia to work as COO of Frontier Securities. In 2012, he set up his own company, Strategic Partners in Mongolia. BS in Structural Architecture at Tokyo Metropolitan University and received a certificate of BA from Diavox Collage in Lausanne, Switzerland. He has 1st Class Chartered Architect qualification in Japan.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item team-wrap" >
+                                <div class="line-solid-team"></div>
+                                <div class="team-photo float-start">
+                                    <img src="./assets/img/img_hendra.png">
+                                </div>
+                                <div class="team-desc-wrap float-end">
+                                    <div class="team-desc">
+                                        <h1>Hendra Ciputra</h1>
+                                        <p>
+                                            A certified insurance expert who graduated from Universitas Mercu Buana and holds master’s degrees in management. Hendra also having IT background for several years after he graduated from Universitas Bina Nusantara after he received his bachelor’s degree of Information Technology. Has more than 15 years experiences as a salesperson for insurance company. Having 6 years experiences on the management level as Sales Director for FWD Life, an Asian established insurance company. Specialized in Agency development and strategic initiative.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item team-wrap" >
+                                <div class="line-solid-team"></div>
+                                <div class="team-photo float-start">
+                                    <img src="./assets/img/img_adrian.png">
+                                </div>
+                                <div class="team-desc-wrap float-end">
+                                    <div class="team-desc">
+                                        <h1>Adrian Emmanuel Haryo Seno</h1>
+                                        <p>
+                                            Adrian (Noel) graduated with a degree in business management from Prasetiya Mulya University Jakarta. After working as Product Research Specialist in vivo Mobile Indonesia, he went to Japan to study Japanese Language. Currently work as Business Development Manager in Beever System Indonesia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item team-wrap" >
+                                <div class="line-solid-team"></div>
+                                <div class="team-photo float-start">
+                                    <img src="./assets/img/img_batochir.png">
+                                </div>
+                                <div class="team-desc-wrap float-end">
+                                    <div class="team-desc">
+                                        <h1>Bat-Ochir Jamiyandorj</h1>
+                                        <p>
+                                            27 years experience in Enterprise IT. Since 1993 Bat-Ochir has worked on different large IT projects including the Aviation, Banking and Government sector.  He worked in Xacbank Mongolia in various positions including CTO and Chief Architect (2008-2018). Currently work as Head of IT in PT. Beever System Indonesia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-dotted-team"></div>
+                    </div>
+                </div>
+                <div class="section" id="section6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 col-xs-12">
+                                <img src="./assets/img/img_downloads.png">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-xs-12">
+                                <div class="downloads-container">
+                                    <div class="downloads-wrap">
+                                        <h1>
+                                            Let's Start Today
+                                        </h1>
+                                        <h2>
+                                            Connected With All The Benefit <br>
+                                            <span><b>Employee Needed</b></span>
+                                        </h2>
+                                        <br>
+                                        <a href="#" class="btn btn-orange" id="en">Get Started Now</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="section" id="section5">
-                    news
+                <div class="section" id="section7">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h1>
+                                    Contact
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-xs-12">
+                                <div class="contact-container">
+                                    <img src="./assets/img/img_logo_beever-portarit.png">
+                                    <div class="clear-fix"></div>
+                                    <br>
+                                    <br>
+                                    <span>
+                                        <i class="pull-right">
+                                            <img src="./assets/img/img_location.png">
+                                        </i>
+                                         Our Location
+                                    </span>
+                                    <p>
+                                        GoWork Plaza Indonesia<br>
+                                        Plaza Indonesia, Level 5, Unit E021AB<br>
+                                        Jl. M.H Thamrin Kavling 28-30<br>
+                                        Kel. Gondangdia, Kec. Menteng,<br>
+                                        Jakarta Pusat 10350
+                                    </p>
+                                    <span>
+                                        <i class="pull-right">
+                                            <img src="./assets/img/img_officehour.png">
+                                        </i>
+                                        Office Hour
+                                    </span>
+                                    <p>
+                                        Monday – Friday at 08:30 AM – 17:30 PM
+                                    </p>
+                                    <span>
+                                        <i class="pull-right">
+                                            <img src="./assets/img/img_contact.png">
+                                        </i>
+                                        Our Contact
+                                    </span>
+                                    <p>
+                                        cs@beever-ecosystem.com
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <ul>
+                                        <li><a href="#"><img src="./assets/img/img_facebook.png"></a></li>
+                                        <li><a href="#"><img src="./assets/img/img_instagram.png"></a></li>
+                                        <li><a href="#"><img src="./assets/img/img_linkedin.png"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-xs-12 position-relative ">
+                                <div class="form-container">
+                                    <h1>Feel Free Contact Us</h1>
+                                    <form>
+                                        <div class="field-wrap">
+                                            <input type="text" class="form-control"  placeholder="Your Name">
+                                        </div>
+                                        <div class="field-wrap">
+                                            <input type="email" class="form-control"  placeholder="Your Email Address">
+                                        </div>
+                                        <div class="field-wrap">
+                                            <input type="number" class="form-control"  placeholder="Your Phone Number">
+                                        </div>
+                                        <div class="field-wrap">
+                                        <textarea class="form-control" cols="20" rows="5"  placeholder="Your Message" ></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="map-container">
+                                    <div id="map-wrap">
+                                        <img src="./assets/img/map.jpg" class="drag-image" id="draggable" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container copyright">
+                        <br>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Copyright © 2022 PT. Beever System Indonesia. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="section" id="section6">
-                    downloads
-                </div>
-                <div class="section" id="section6">
-                    contact page
-                </div>
+                
             </div>
         </div>
 
-    <script src="assets/lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="assets/lib/bootstrap/bootstrap.min.js"></script>
     <script src="assets/lib/fullpage/fullpage.min.js"></script>
+    <script src="assets/lib/timeline/timeline.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="assets/js/custom.js"></script>
-        <script type="text/javascript">
-            
-            var myFullpage = new fullpage('#fullpage', {
-                anchors: ['homePage', 'businessPage', 'experiencePage', 'partnerPage','teamPage','newsPage','downloadsPage','contactPage'],
-                menu: '#menu',
-                scrollBar: true,
-                navigation: false,
-                navigationPosition: 'right',
-                responsiveWidth: 1100,
-                afterResponsive: function(isResponsive){}
 
-            });
+        <script type="text/javascript">
+            function initialization(){
+                var myFullpage = new fullpage('#fullpage', {
+                    anchors: ['homePage', 'businessPage', 'experiencePage', 'partnerPage','newsPage','teamPage','downloadsPage','contactPage'],
+                    menu: '#menu',
+                    responsiveWidth: 900,
+		            responsiveSlides: true,
+                    scrollBar: true,
+                    resize: false,
+                    scrollOverflow: true
+                });
+              
+            }
+	        initialization();
+
             var myVar;
             function myFunction() {
             myVar = setTimeout(showPage, 3000);
@@ -415,10 +720,51 @@
             document.getElementById("loader").style.display = "none";
             document.getElementById("myDiv").style.display = "block";
             }
-
-           
-
-
         </script>
+        <script>
+            $(document).ready(function() {
+                var owl = $('.carousel-news');
+                owl.owlCarousel({
+                    nav: false,
+                    loop:  false,
+                    dots: false,
+                    responsive: {
+                        0: {
+                        items: 1
+                        },
+                        600: {
+                        items: 2
+                        },
+                        1000: {
+                        items: 4
+                        }
+                    }
+                });
+                var owl = $('.carousel-team');
+                owl.owlCarousel({
+                    center: true,
+                    loop:false,
+                    dots: false,
+                    autoWidth:true,
+                    responsive: {
+                        0: {
+                        items: 1
+                        },
+                        600: {
+                        items: 2
+                        },
+                        1000: {
+                        items: 4
+                        }
+                    }
+                });
+            })
+        </script>
+        <script type="text/javascript">
+            $(function() {
+            $("#draggable").draggable();
+            });
+        </script>
+      
 </body>
 </html>
