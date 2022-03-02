@@ -24,7 +24,7 @@ strong{
 	font-weight: bold;
 }
 ol,ul {
-    list-style: none;
+    
     margin:0;
     padding:0;
 }
@@ -465,20 +465,27 @@ ul li {
 .wrapper-counter p {
 	font-size:16px !important;
 }
-.partner img {
+.partner-item a img {
 	filter: grayscale(100%);
 	opacity:50%;
 	cursor: pointer;
+	margin: auto !important;
+    width: 100% !important;
 }
-.partner:hover img {
+.partner-item a:hover img {
 	filter: grayscale(0%);
 	opacity:100%;
 }
-.partner {
+.partner-wrap {
 	height: 100px;
-	display: flex;
-	align-items: center; /* Vertical */
-	justify-content: center; /* Horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+.partner-item {
+	width:120px;
 }
 #news-carousel {
 	position: relative;
@@ -1027,6 +1034,68 @@ ul li {
 	overflow-y:scroll;
 }
 
+.modal-content-scroll ol {
+	padding-inline-start: 40px;
+}
+.modal-content-scroll ol li {
+	font-weight:500;
+}
+.business-wrap {
+	height:500px;
+}
+.soon {
+
+	height:500px;
+	border-radius:20px;
+}
+.soon p {
+	font-size:20px;
+}
+#partner-carousel-wrap .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+	z-index:0;
+}
+.partner-item a {
+	display:block;
+}
+#partner-carousel-wrap .owl-stage-outer {
+	z-index:9999;
+}
+#partner-carousel-wrap  .owl-nav button.owl-prev {
+    float: left !important;
+    position: absolute;
+    left: -50px;
+}
+#partner-carousel-wrap  .owl-nav button.owl-next {
+    float: right !important;
+    position: absolute;
+    right: -50px;
+}
+#partner-carousel-wrap .owl-nav button.owl-prev:focus, #partner-carousel-wrap .owl-nav button.owl-next:focus {
+    outline: none;
+}
+#partner-carousel-wrap .owl-nav button.owl-prev:hover, #partner-carousel-wrap .owl-nav button.owl-next:hover {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.experience-wrap {
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background: rgb(209, 209, 209);
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
+	background: #00A3B4 !important;
+}
 @media screen and (min-width:1201px) and (max-width:1400px){
 	.navbar-beever ul li a {
 		padding: 10px 15px 0px 15px
