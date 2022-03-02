@@ -1215,9 +1215,7 @@ ul li {
 		position: absolute;
     	right: -50px;
 	}
-	.bg-landing img {
-		width:200px;
-	}
+	
 }
 @media screen and (max-width:768px) {
 }
@@ -1253,6 +1251,9 @@ ul li {
 	  display: block;
 	  flex-wrap: none;
 	  height: auto;
+	}
+	.bg-landing img {
+		width:200px;
 	}
   }
   .responsive-tabs.nav-tabs i.fa {
