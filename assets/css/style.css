@@ -126,14 +126,13 @@ abbr,acronym { border: 0;
 .container-radar {
 	position: absolute;
 	width: 500px;
-	height: 230px;
+	height: 200px;
 	margin: auto;
 	left: 0;
 	right: 0;
 	left: 0;
 	bottom: 0;
 	top: 0;
-	opacity: 0.5;
   }
 #loader {
 	position: absolute;
@@ -180,6 +179,7 @@ animation: draw 2.5s infinite;
 	right:0;
 	top:0;
 	bottom:0;
+	opacity: 0.4;
 }
 .masking-radar {
 	position: relative;
@@ -200,7 +200,7 @@ animation: draw 2.5s infinite;
 	margin: auto;
 	left: 0;
 	right: 24px;
-	top: -25px;
+	top: 0px;
 	bottom: 0;
 }
 
