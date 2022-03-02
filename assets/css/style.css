@@ -434,7 +434,6 @@ ul li {
 #section2 p {
 	font-size:20px;
 	font-weight: 300;
-	margin:auto auto 30px auto;
 }
 #section3 p, #section5 p {
 	font-size:17px;
@@ -451,10 +450,15 @@ ul li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+	margin: 10px auto 10px auto;
+
 }
 .wrapper-counter {
 	text-align:center;
-	padding: 65px 0px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height:100%;
 }
 .wrapper-counter span {
 	color:#00A3B4;
@@ -1097,6 +1101,9 @@ ul li {
 #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
 	background: #00A3B4 !important;
 }
+.wrap-count-number {
+	margin:30px auto;
+}
 @media screen and (min-width:1201px) and (max-width:1400px){
 	.navbar-beever ul li a {
 		padding: 10px 15px 0px 15px
@@ -1339,8 +1346,71 @@ ul li {
 	.experience img {
 		padding: 30px 80px 0px 80px;
 	}
-	.wrap-count-number {
-		padding-bottom: 200px;
+
+	.wrap-number {
+		height: 190px;
+		margin: auto auto 20px auto;
+		height: 190px;
+		padding: 0px 36px;
+
+	}
+	.wrapper-counter span {
+		font-size:27px;
+	}
+	.wrap-count-number, .landing-section, .partner-section, .business-section, .news-section {
+		margin: 30px auto 120px auto !important;
+	}
+
+	.team-wrap {
+		width: 360px;
+		display: block;
+		align-items:none;
+		justify-content: none;
+		padding: 40px 30px 40px 0px;
+	}
+	.team-photo {
+		width: 120px;
+		margin: 0px auto 0px auto;
+		position: relative;
+	}
+	.team-photo img {
+		width:120px !important;
+		margin:auto
+	}
+	.line-solid-team {
+		top: 106px;
+	}
+	.team-desc-wrap {
+		display: block;
+		align-items:none;
+		justify-content: none;
+		height:auto;
+		margin: 20px auto;
+	}
+	.owl-item.active.center .team-desc-wrap {
+		height:auto;
+		margin: 20px auto;
+	}
+	.line-dotted-team {
+		top: 106px;
+	}
+	 #section5 p {
+		font-size: 15px;
+	}
+	.map-container {
+		position:relative
+	}
+	.form-container {
+		width:100%;
+		height:auto;
+		margin:30px auto
+	}
+	.p-small-40 {
+		padding:0px 40px
+	}
+	.map-container {
+		height: 300px;
+		width: 100%;
 	}
   }
   .responsive-tabs.nav-tabs i.fa {
